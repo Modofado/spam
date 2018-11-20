@@ -41,4 +41,4 @@ var channel = "511870316415418374";
     client.guilds.get(server).channels.get(channel).send('#daily')
     },86400);
 })
-client.login(process.env.BOT_TOKEN);l
+client.login(process.env.BOT_TOKEN);
