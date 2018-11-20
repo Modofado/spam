@@ -14,4 +14,20 @@ var channel = "511569524353531906";//
     },400);
 })
 
-client.login(BOT_TOKEN);
+client.on('message', message => {
+  if (message.author.bot) return;
+  if (!message.content.startsWith(prefix)) return;
+
+  let command = message.content.split(" ")[0];
+  command = command.slice(prefix.length);
+
+  let args = message.content.split(" ").slice(1);
+
+  if (command == "say") {
+if(!message.member.hasPermission('ADMINISTRATOR')) return message.channel.send('?|**\`ADMINISTRATOR\`ليس لديك صلاحيات`**');
+   message.channel.sendMessage(args.join(NDg2MTc5NzU5MDkzNTc5Nzc5.Ds8BUQ.Yaz8lKVOtFLIdYnE_tj_swi2oMk))
+   message.delete()
+  }
+ });
+
+ NDg2MTc5NzU5MDkzNTc5Nzc5.Ds8BUQ.Yaz8lKVOtFLIdYnE_tj_swi2oMk);
