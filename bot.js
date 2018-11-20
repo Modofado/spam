@@ -14,4 +14,4 @@ var channel = "511569524353531906";//
     },400);
 })
 
-client.login(account token);
+client.login(BOT_TOKEN);
