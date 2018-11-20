@@ -2,32 +2,43 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`);  
+  console.log(Logged in as ${client.user.tag}!);
+ client.user.setGame('s!help | *By iTzMoody','https://www.twitch.tv/peery13');
+  console.log('')
+  console.log('')
+  console.log('╔[═════════════════════════════════════════════════════════════════]╗')
+  console.log([Start] ${new Date()});
+  console.log('╚[═════════════════════════════════════════════════════════════════]╝')
+  console.log('')
+  console.log('╔[════════════════════════════════════]╗');
+  console.log(Logged in as * [ " ${client.user.username} " ]);
+  console.log('')
+  console.log('Informations :')
+  console.log('')
+  console.log(servers! [ " ${client.guilds.size} " ]);
+  console.log(Users! [ " ${client.users.size} " ]);
+  console.log(channels! [ " ${client.channels.size} " ]);
+  console.log('╚[════════════════════════════════════]╝')
+  console.log('')
+  console.log('╔[════════════]╗')
+  console.log(' Bot Is Online')
+  console.log('╚[════════════]╝')
+  console.log('')
+  console.log('')
 });
-
-
 client.on('ready', async() => {
-var server = "511569524353531904"; //
-var channel = "511569524353531906";//
+var server = "511569524353531904"; 
+var channel = "511569524353531906";
     setInterval(()=>{
-    client.guilds.get(server).channels.get(channel).send('**Dalida Spam , Dalida Spam , Dalida Spam , Dalida Spam , Dalida Spam , Dalida Spam , Dalida Spam ,  , Dalida Spam , Dalida Spam , Dalida Spam , Dalida Spam , Dalida Spam , Dalida Spam , Dalida Spam , **')
+    client.guilds.get(server).channels.get(channel).send('**كودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودزكودز** ')
     },400);
 })
 
-client.on('message', message => {
-  if (message.author.bot) return;
-  if (!message.content.startsWith(prefix)) return;
-
-  let command = message.content.split(" ")[0];
-  command = command.slice(prefix.length);
-
-  let args = message.content.split(" ").slice(1);
-
-  if (command == "say") {
-if(!message.member.hasPermission('ADMINISTRATOR')) return message.channel.send('?|**\`ADMINISTRATOR\`ليس لديك صلاحيات`**');
-   message.channel.sendMessage(args.join(NDg2MTc5NzU5MDkzNTc5Nzc5.Ds8BUQ.Yaz8lKVOtFLIdYnE_tj_swi2oMk))
-   message.delete()
-  }
- });
-
- NDg2MTc5NzU5MDkzNTc5Nzc5.Ds8BUQ.Yaz8lKVOtFLIdYnE_tj_swi2oMk);
+client.on('ready', async() => {
+var server = "511569524353531904"; 
+var channel = "511870316415418374";
+    setInterval(()=>{
+    client.guilds.get(server).channels.get(channel).send('#daily')
+    },86400);
+})
+client.login(process.env.BOT_TOKEN);
